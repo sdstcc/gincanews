@@ -1,0 +1,132 @@
+/* Base */
+body {
+    background-color: #0d1117; /* Fundo escuro */
+    font-family: 'Segoe UI', sans-serif;
+    overflow-x: hidden;
+    color: #CCCCCC;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #181616 !important;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.navbar .nav-link {
+    color: #CCCCCC !important;
+}
+.navbar .nav-link:hover {
+    color: #FFB300 !important;
+}
+
+.navbar .btn-success:hover {
+    background-color: #ff0000;
+    color: #C8102E;
+}
+
+.navbar.scrolled {
+    background-color: #1b1f27 !important;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
+
+/* Hero Section - Degradê Suave de Vermelho e Vinho */
+.hero {
+    height: 100vh;
+    /* Degradê Suave */
+    background: linear-gradient(
+        140deg, 
+        rgba(196, 123, 123, 0.4),    
+        rgba(214, 20, 65, 0.6)       
+    ), center/cover no-repeat;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    /* Sombra de texto geral, ajustada para o h1 */
+    text-shadow: 0 0 8px rgba(0, 0, 0, 0.5); 
+}
+
+.hero h1 {
+    color: #FFFFFF;
+}
+
+/* Parágrafo do Hero (Texto de acompanhamento) */
+.hero p {
+    color: #FFFFFF; /* BRANCO PURO para alto contraste */
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5); /* Sombra para destacar */
+    font-size: 1.2em; 
+    font-weight: 400; 
+    margin-top: 15px;
+    opacity: 0.9;
+    /* Garante que o texto não fique muito largo em telas muito grandes */
+    max-width: 800px; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Ajuste do tamanho dos botões no Hero para telas pequenas */
+@media (max-width: 576px) {
+    .hero h1 {
+        font-size: 2.5rem; /* Diminui o título para o celular */
+    }
+    .hero .btn-lg {
+        width: 100%; /* Botões ocupam a largura total */
+        margin-bottom: 10px !important;
+    }
+    .hero .me-2 {
+        margin-right: 0 !important; /* Remove margem direita para empilhar */
+    }
+}
+
+
+/* Botão Primário (Download Android) */
+.hero .btn-primary {
+    background-color: #FFFFFF;
+    color: #C8102E; 
+    border: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: all 0.2s ease;
+    border-radius: 8px; 
+}
+
+/* Botão Hover CORRIGIDO */
+.hero .btn-primary:hover {
+    background-color: #C8102E; 
+    color: #FFFFFF; 
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Botão Outline (Download IOS) */
+.hero .btn-outline-light {
+     border-radius: 8px; 
+}
+
+/* Footer */
+footer {
+    background-color: #222121;
+    color: #FFFFFF;
+}
+
+footer a {
+    color: #F5F5F5;
+    text-decoration: none;
+}
+footer a:hover {
+    color: #ff0000 !important; 
+}
+
+/* Responsividade do Footer para telas menores */
+footer .d-flex.justify-content-center.gap-3 {
+    flex-direction: column; /* Empilha os links sociais no celular */
+    gap: 5px !important;
+}
+footer .d-flex.align-items-center.gap-1 {
+    font-size: 0.8rem !important; /* Aumenta um pouco para toque */
+}
+
+/* Classes de Contraste */
+.text-strong-contrast {
+    color: #FFFFFF !important;
+}
