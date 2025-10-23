@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GincaNews - Download</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-primary text-strong-contrast" href="#">GincaNews</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre</a></li>
+                    <li class="nav-item"><a class="nav-link" href="ajuda.html">Ajuda</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+                    <li class="nav-item ms-lg-3">
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero text-center text-light d-flex align-items-center" id="home">
+        <div class="container" data-aos="fade-up">
+            <h1 class="fw-bold display-5 display-md-4">O aplicativo oficial da <span
+                    class="text-strong-contrast">Gincana da Amizade</span></h1>
+
+            <p class="lead mt-3">Responda a pesquisa de satisfação ou informe bugs</p>
+
+            <div class="mt-4 d-flex flex-column flex-sm-row justify-content-center">
+                <a href="downloads/gincanews.apk" download class="btn btn-primary btn-lg me-sm-2 mb-2 mb-sm-0">
+                    Formulário de Satisfação
+                </a>
+                <a href="downloads/gincanews.apk" download class="btn btn-primary btn-lg me-sm-2 mb-2 mb-sm-0">
+                    Informe de Bugs
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="text-light py-4 text-center">
+        <div class="container">
+            <p class="text-secondary small mb-2">Acompanhe nossa escola nas redes sociais:</p>
+            <div class="d-flex flex-column flex-sm-row justify-content-center align-items-center gap-2 gap-sm-3">
+                <a href="https://www.instagram.com/etecfernandoprestes/" target="_blank"
+                    class="text-light d-flex align-items-center gap-1" style="font-size: 0.7rem;">
+                    <i class="bi bi-instagram fs-5"></i> @etecfernandoprestes
+                </a>
+                <a href="https://w.app/gfiuv4" target="_blank" class="text-light d-flex align-items-center gap-1"
+                    style="font-size: 0.7rem;">
+                    <i class="bi bi-whatsapp fs-5"></i> Whatsapp
+                </a>
+                <a href="https://etecfernandoprestes.cps.sp.gov.br" target="_blank"
+                    class="text-light d-flex align-items-center gap-1" style="font-size: 0.7rem;">
+                    <i class="bi bi-book fs-5"></i> Institucional
+                </a>
+            </div>
+            <p class="text-secondary mb-1 small mt-2">© 2025 SDS - Todos os direitos reservados.</p>
+            <a href="#" class="text-secondary small mx-1 text-decoration-none">Suporte</a>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <script>
+        AOS.init({ duration: 1000, once: true });
+
+        window.addEventListener('scroll', () => {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        ScrollReveal().reveal('.hero h1', { delay: 200, origin: 'top', distance: '40px' });
+        ScrollReveal().reveal('.hero p', { delay: 400, origin: 'bottom', distance: '30px' });
+        ScrollReveal().reveal('.hero .mt-4 a', { delay: 600, origin: 'bottom', distance: '20px' });
+    </script>
+</body>
+
+</html>

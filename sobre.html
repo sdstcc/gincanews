@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GincaNews - Sobre</title>
+
+    <!-- Bootstrap e ícones -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Animações -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+    <!-- Seu CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-primary text-strong-contrast" href="#">GincaNews</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="sobre.html">Sobre</a></li>
+                    <li class="nav-item"><a class="nav-link" href="ajuda.html">Ajuda</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section class="hero" id="sobre">
+        <div class="container text-center" data-aos="fade-up">
+            <h1 class="fw-bold mb-4">Sobre o <span class="text-strong-contrast">GincaNews</span></h1>
+            <p class="lead mb-5">
+                O <strong>GincaNews</strong> é o aplicativo oficial da <strong>Gincana da Amizade</strong>, evento
+                tradicional promovido pela <strong>ETEC Fernando Prestes</strong>, em Sorocaba.
+                A iniciativa busca unir alunos, professores e toda a comunidade escolar por meio de
+                atividades criativas, esportivas, solidárias e culturais.
+            </p>
+
+            <div class="row justify-content-center text-start">
+                <div class="col-lg-8">
+                    <h3 class="text-strong-contrast mt-4">A ETEC Fernando Prestes</h3>
+                    <p>
+                        A <strong>Escola Técnica Estadual Fernando Prestes</strong> pertence ao <strong>Centro Paula
+                            Souza</strong> e é referência em educação técnica e tecnológica no Estado de São Paulo.
+                        Fundada há 95 anos, forma profissionais qualificados e cidadãos comprometidos
+                        com a sociedade.
+                    </p>
+
+                    <h3 class="text-strong-contrast mt-4">A Gincana da Amizade</h3>
+                    <p>
+                        Presente no calendário escolar desde 1999, a Gincana da Amizade é um dos eventos mais aguardados da ETEC, 
+                        a gincana promove cooperação, solidariedade e respeito.
+                        As turmas competem em atividades esportivas, culturais e filantrópicas, fortalecendo os laços de
+                        amizade e o trabalho em equipe.
+                    </p>
+
+                    <h3 class="text-strong-contrast mt-4">O Aplicativo GincaNews</h3>
+                    <p>
+                        Criado para aproximar a comunidade escolar, o <strong>GincaNews</strong> permite acompanhar
+                        notícias e o cronograma de eventos em tempo real — tudo direto no seu celular, de forma prática e
+                        interativa.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="text-light py-4 text-center">
+        <div class="container">
+            <p class="text-secondary small mb-2">Acompanhe nossa escola nas redes sociais:</p>
+            <div class="d-flex flex-column flex-sm-row justify-content-center align-items-center gap-2 gap-sm-3">
+                <a href="https://www.instagram.com/etecfernandoprestes/" target="_blank"
+                    class="text-light d-flex align-items-center gap-1" style="font-size: 0.7rem;">
+                    <i class="bi bi-instagram fs-5"></i> @etecfernandoprestes
+                </a>
+                <a href="https://w.app/gfiuv4" target="_blank" class="text-light d-flex align-items-center gap-1"
+                    style="font-size: 0.7rem;">
+                    <i class="bi bi-whatsapp fs-5"></i> Whatsapp
+                </a>
+                <a href="https://etecfernandoprestes.cps.sp.gov.br" target="_blank"
+                    class="text-light d-flex align-items-center gap-1" style="font-size: 0.7rem;">
+                    <i class="bi bi-book fs-5"></i> Institucional
+                </a>
+            </div>
+            <p class="text-secondary mb-1 small mt-2">© 2025 SDS - Todos os direitos reservados.</p>
+            <a href="#" class="text-secondary small mx-1 text-decoration-none">Suporte</a>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+        AOS.init({ duration: 1000, once: true });
+        ScrollReveal().reveal('h1, h3, p', { delay: 200, distance: '30px', origin: 'bottom', interval: 100 });
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const navbar = document.querySelector(".navbar");
+            const body = document.body;
+            body.style.paddingTop = navbar.offsetHeight + "px";
+        });
+    </script>
+
+</body>
+
+</html>
