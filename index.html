@@ -4,6 +4,11 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>GincaNews - Download</title>
+
+        <!-- Favicon -->
+        <link rel="icon" type="image/png" href="img/logo.png">
+
+        <!-- CSS Bootstrap e Ícones -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
         <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
@@ -11,9 +16,13 @@
     </head>
 
     <body>
+        <!-- NAVBAR -->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm fixed-top">
             <div class="container">
-                <a class="navbar-brand fw-bold text-primary text-strong-contrast" href="#">GincaNews</a>
+                <a class="navbar-brand d-flex align-items-center fw-bold text-primary text-strong-contrast" href="index.html">
+                    <img src="img/logo.png" alt="Logo GincaNews" width="40" height="40" class="me-2 rounded-circle">
+                    GincaNews
+                </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -23,17 +32,17 @@
                         <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre</a></li>
                         <li class="nav-item"><a class="nav-link" href="ajuda.html">Ajuda</a></li>
                         <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
-                        <li class="nav-item ms-lg-3">
-                        </li>
                     </ul>
                 </div>
             </div>
         </nav>
 
+        <!-- HERO -->
         <section class="hero text-center text-light d-flex align-items-center" id="home">
             <div class="container" data-aos="fade-up">
-                <h1 class="fw-bold display-5 display-md-4">O aplicativo oficial da <span
-                        class="text-strong-contrast">Gincana da Amizade</span></h1>
+                <h1 class="fw-bold display-5 display-md-4">
+                    O aplicativo oficial da <span class="text-strong-contrast">Gincana da Amizade</span>
+                </h1>
 
                 <p class="lead mt-3">Acompanhe todos os eventos e datas da nossa gincana com mais praticidade!</p>
 
@@ -41,11 +50,11 @@
                     <a href="downloads/gincanews.apk" download class="btn btn-primary btn-lg me-sm-2 mb-2 mb-sm-0">
                         <i class="bi bi-android2"></i> Versão para Android
                     </a>
-
                 </div>
             </div>
         </section>
 
+        <!-- FOOTER -->
         <footer class="text-light py-4 text-center">
             <div class="container">
                 <p class="text-secondary small mb-2">Acompanhe nossa escola nas redes sociais:</p>
@@ -68,6 +77,7 @@
             </div>
         </footer>
 
+        <!-- SCRIPTS -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
         <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
         <script src="https://unpkg.com/scrollreveal"></script>
